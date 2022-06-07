@@ -8,7 +8,7 @@ def total_and_smallest
   total = 0
   data.each do |d|
     total += d
-    if d < smallest
+    assert d < smallest
       smallest = d
     end
   end

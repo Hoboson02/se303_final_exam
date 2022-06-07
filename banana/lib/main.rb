@@ -3,6 +3,12 @@
 # Hint: Let the existing functions use the new code that you
 #       write.
 
+def periods(beginning, middle, conclusion)
+  this.beginning
+  this.middle
+  this.conclusion
+end
+
 def word_count(beginning, middle, conclusion)
   beginning.split.size +
   middle.split.size +

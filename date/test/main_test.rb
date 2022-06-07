@@ -10,7 +10,7 @@ class MainTest < Minitest::Test
   end
 
   def test_number_of_plots
-    assert_equal 2, Farm.new.number_of_plots
+    assert_equal 2, Farm.new.plots.size
   end
 
   def test_number_of_plants

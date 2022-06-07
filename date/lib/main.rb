@@ -22,10 +22,6 @@ class Farm
     @plots = [plot_a, plot_b]
   end
 
-  def number_of_plots
-    plots.size
-  end
-
   def total_number_of_plants
                   # Subtract one from size because name is not a plant
     plots.reduce(0) { |total, plot| total += (plot.size - 1) }
