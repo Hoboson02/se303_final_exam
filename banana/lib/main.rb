@@ -7,6 +7,12 @@ public def number_of_splits
   split.size
 end
 
+public def number_of_scans
+  scan(/\./).size
+end
+
+
+
 def word_count(beginning, middle, conclusion)
   beginning.number_of_splits +
   middle.number_of_splits +
@@ -18,7 +24,7 @@ def letter_count(beginning, middle, conclusion)
 end
 
 def period_count(beginning, middle, conclusion)
-  beginning.scan(/\./).size +
-  middle.scan(/\./).size +
-  conclusion.scan(/\./).size
+  beginning.number_of_scans +
+  middle.number_of_scans +
+  conclusion.number_of_scans
 end
