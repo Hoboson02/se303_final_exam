@@ -3,18 +3,29 @@
 # Hint: Let the existing functions use the new code that you
 #       write.
 
-def word_count(beginning, middle, conclusion)
-  beginning.split.size +
-  middle.split.size +
-  conclusion.split.size
-end
+class Count 
 
-def letter_count(beginning, middle, conclusion)
-  beginning.size + middle.size + conclusion.size
-end
+  attr_reader :beginning, :middle, :conclusion
 
-def period_count(beginning, middle, conclusion)
-  beginning.scan(/\./).size +
-  middle.scan(/\./).size +
-  conclusion.scan(/\./).size
+  def initialize(beginning, middle, conclusion)
+    @beginning = beginning
+    @middle = middle
+    @conclusion = conclusion
+  end
+
+  def word_count()
+    @beginning.split.size +
+    @middle.split.size +
+    @conclusion.split.size
+  end
+
+  def letter_count()
+    @beginning.size + @middle.size + conclusion.size
+  end
+
+  def period_count()
+    @beginning.scan(/\./).size +
+    @middle.scan(/\./).size +
+    conclusion.scan(/\./).size
+  end
 end
