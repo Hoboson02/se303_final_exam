@@ -3,16 +3,14 @@
 # Hint: Let the existing functions use the new code that you
 #       write.
 
-def periods(beginning, middle, conclusion)
-  this.beginning
-  this.middle
-  this.conclusion
+public def number_of_splits
+  split.size
 end
 
 def word_count(beginning, middle, conclusion)
-  beginning.split.size +
-  middle.split.size +
-  conclusion.split.size
+  beginning.number_of_splits +
+  middle.number_of_splits +
+  conclusion.number_of_splits
 end
 
 def letter_count(beginning, middle, conclusion)
